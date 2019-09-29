@@ -1,0 +1,33 @@
+body{margin: 0; 
+	 height: 10px; 
+	 background-repeat: no-repeat; 
+	 background-size: cover;
+	 animation: 20s bgmove infinite;}
+@keyframes bgmove{
+	0%{ background-image: url(../img/bg.jpg);}
+	25%{ background-image: url(../img/bg2.jpg);}
+	50%{ background-image: url(../img/bg3.jpg);}
+	75%{ background-image: url(../img/bg4.jpg);}
+	100%{ background-image: url(../img/bg.jpg);}
+}
+
+#time{padding:20px; 
+	  position:absolute;
+	  left: 420px;
+	  width:600px;
+	  background: rgba(0,0,0,.5);
+	  margin-top:200px;
+	  color: #FFFFFF;
+	  text-align: center;
+	  font-family: "agency fb";
+	  font-size: 150px;
+	  animation: 6s move infinite; }
+
+
+@keyframes move{
+	0%{transform: rotateX(0deg) rotateY(0deg);}
+	25%{transform: rotateX(90deg) rotateY(90deg)}
+	50%{transform: rotateX(180deg) rotateY(180deg)}
+	75%{transform: rotateX(270deg) rotateY(270deg)}
+	100%{transform: rotateX(360deg) rotateY(360deg)}
+}
